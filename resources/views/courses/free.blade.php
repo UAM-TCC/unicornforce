@@ -2,17 +2,18 @@
 @section('content')
 
 <style>
-	.card-img-top {
-		height: 8rem;
-	}
+    .card-img-top {
+        height: 8rem;
+    }
 
-	.form-control {
-		color: #3FBD57 !important;
-	}
+    .form-control {
+        color: #3FBD57 !important;
+    }
 
     .card {
         background-color: #222222 !important;
-        border: none;;
+        border: none;
+        ;
     }
 </style>
 <section>
@@ -21,10 +22,10 @@
 
             <!-- Front End Collapse -->
             <div class="card bg-collapse">
-                <div class="card-header">
+                <div class="card-header" id="headingOne">
                     <div class="row">
                         <h5 class="col d-flex justify-content-start align-items-center mb-0">
-                            <button class="btn btn-link text-decoration-none text-dark bg-btncollapse collapsed justify-content-between text-green font-33" type="button">
+                            <button class="btn btn-success bg-btncollapse collapsed justify-content-start" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 Front End
                             </button>
                         </h5>
@@ -36,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collapseOne" class="collapse show">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="row">
                             <div class="col d-flex justify-content-center align-items-center">
@@ -104,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="row">
                             <div class="col d-flex justify-content-center align-items-center">
@@ -162,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collapseThree"  class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="row">
                             <div class="col d-flex justify-content-center align-items-center">
@@ -238,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collapseFour"  class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="row">
                             <div class="col d-flex justify-content-center align-items-center">
@@ -491,8 +492,8 @@
                 <div class="card-header" id="headingEight">
                     <div class="row">
                         <h5 class="col d-flex justify-content-start align-items-center mb-0">
-                            <button class="btn btn-link text-decoration-none text-dark bg-btncollapse collapsed justify-content-between text-green font-33" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                Veja cursos de Mysql gratuitos
+                            <button class="btn btn-success bg-btncollapse collapsed justify-content-start" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                MySQL
                             </button>
                         </h5>
                         <div class="col d-flex justify-content-end align-items-center">
@@ -605,4 +606,23 @@
     </div>
 </section>
 
+<br>
+<br>
+<br>
+<br>
+<section class="bg-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 text-center text-xl-start"></a>
+            </div>
+            <div class="col-xl-4 pt-2 pt-xl-0">
+                <p class="mb-0 text-center text-xl-end"><a class="text-300 text-decoration-none footer-link" href="#!"> </a><a class="text-300 text-decoration-none footer-link ps-4" href="#!"> </a>
+                </p>
+            </div>
+            <div class="col-xl-5 pt-2 pt-xl-0 text-center text-xl-end">
+                <p class="mb-0">&copy; Unicorn force</a></p>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

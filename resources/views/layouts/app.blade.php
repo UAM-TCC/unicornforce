@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,33 +19,33 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="{{ route('index') }}"><img src="{{ asset('img/imagotipo.png') }}" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ route('index') }}">Inicio <span class="sr-only"></span></a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{{ route('index') }}"><img src="{{ asset('img/imagotipo.png') }}" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('index') }}">Inicio <span class="sr-only"></span></a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('indexdocs') }}">Documentação</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('indexdocs') }}">Documentação</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('supportpage') }}">Apoie</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('supportpage') }}">Apoie</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('index') }}">Sobre-nos</a>
-            </li>
-            @guest
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('index') }}">Sobre-nos</a>
+                </li>
+                @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">Login</a>
                 </li>
-            @else
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('listphones') }}">Administração</a>
                 </li>
@@ -56,10 +57,11 @@
                         @csrf
                     </form>
                 </li>
-            @endguest
-        </ul>
-    </div>
-</nav>
+                @endguest
+            </ul>
+        </div>
+    </nav>
     @yield('content')
 </body>
+
 </html>

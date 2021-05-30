@@ -13,15 +13,15 @@
     <br>
     <thead>
         <tr class="text-center">
-            <th scope="col">Nota</th>
             <th scope="col">Classificação</th>
+            <th scope="col">Nota</th>
         </tr>
     </thead>
 
     <tbody>
         <tr class="text-center">
-            <td>{{ $smartphone->final_test_result }}</td>
             <td>{{ $quality }}</td>
+            <td>{{ $smartphone->final_test_result }}</td>
         </tr>
     </tbody>
 </table>

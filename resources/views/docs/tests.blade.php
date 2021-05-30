@@ -1,29 +1,47 @@
-@extends('layouts.docslayout')
-@section('content')
+@extends('layouts.admin')
 
+@section('content')
 <style>
-    .card-img-top {
-        height: 16rem;
+    .cellphones {
+        width: 386.66px !important;
+        height: 240px !important;
+        object-fit: contain !important;
     }
 
     .form-control {
         color: #3FBD57 !important;
     }
+
+    .bg-btncollapse {
+        background-color: #3FBD57 !important;
+        border-radius: 0.60rem;
+    }
+
+    .bg-collapse {
+        background-color: #222222 !important;
+        border-radius: 0.5rem;
+        border: #222222;
+    }
 </style>
 
-<div class="row m-0 courses-cards">
-    @foreach ($smartphones as $smartphone)
-        <div class="col-md-4 mt-4 d-flex justify-content-center">
-            <div class="card bg-dark" style="width: 18rem;">
-                <img src="{{ asset('storage/'.$smartphone->picture) }}" class="card-img-top" alt="...">
-                <div class="card-body">
+<section class="container">
+    <h1 class="d-flex justify-content-center display-5 fw-semi-bold">Celulares testados</h1>
+</section>
+
+<section class="container">
+    <div class="row">
+        @foreach ($smartphones as $smartphone)
+        <div class="col-lg-4 d-flex justify-content-center">
+            <div class="card bg-collapse">
+                <img class="card-img-top cellphones" src="{{ Storage::url($smartphone->picture) }}" alt="{{ $smartphone->model }}">
+                <div class="card-body text-center">
                     <h5 class="card-title">{{ $smartphone->model }}</h5>
                     <p class="card-text">Selo de qualidade : 1</p>
-                    <a href="{{ route('testsresults', $smartphone->id) }}" class="btn btn-dark">Ver teste</a>
+                    <a href="{{ route('testsresults', $smartphone->id) }}" class="btn btn-success bg-btncollapse">Ver teste</a>
                 </div>
             </div>
         </div>
-    @endforeach
-</div>
+        @endforeach
+</section>
 
-@endsection('content')
+@endsection
