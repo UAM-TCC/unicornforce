@@ -189,17 +189,6 @@
     e este pode ser classificado entre 6 níveis de qualidade, como na Tabela 3.
 </p>
 
-<h5 class="d-flex justify-content-start mt-5">
-    Selo de Qualidade (SQ)
-</h5>
-<p class="font-weight-bold text-docs">
-    O Selo de Qualidade representa o produto final dos resultados obtidos anteriormente através dos RP, RC e RCF, porém diferentemente do Resultado Final, o SQ representa uma classificação
-    do dispositivo. Através do SQ, é possível representar as capacidades de um dispositivo de forma clara e padronizada, garantindo o controle de qualidade dos aparelhos testados.
-    Para definição da relação entre o Resultado Final (RF) e o Selo de Qualidade (SQ) foi utilizado um Raspberry Pi 3 Model B e Ubuntu Core 18, com a pontuação base de 319,78,
-    obtida a partir da média de cinco testes de performance, apresentados no Apêndice J. Cada nível representa a relação entre a pontuação base e o dispositivo Android avaliado,
-    e este pode ser classificado entre 6 níveis de qualidade, como na Tabela 3.
-</p>
-
 <p class="d-flex justify-content-start">Tabela 3</p>
 <table class="table table-dark mt-3 table-responsive w-50">
     <thead>

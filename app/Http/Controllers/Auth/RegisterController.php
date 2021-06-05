@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -69,5 +71,20 @@ class RegisterController extends Controller
             'birthday' => $data['birthday'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        // $this->guard()->login($user);
+        //this commented to avoid register user being auto logged in
+
+        return !$this->registered($request, $user)
+            ? redirect()->route('login')
+            ->with('success', 'Cadastrado efetuado com sucesso ! bem vindo a Unicorn force') :
+            back()->with('error', 'Erro no cadastro do usuário');
     }
 }

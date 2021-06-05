@@ -46,3 +46,7 @@ Route::get('/courses', 'CourseController@index')->name('courselist');
 Route::get('/courses/free', function () {
     return view('courses/free');
 })->name('freecourses');
+
+Route::get('/about', function () {
+    return view('defaultpages/about');
+})->name('aboutpage');

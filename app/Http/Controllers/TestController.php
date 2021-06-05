@@ -14,7 +14,6 @@ class TestController extends Controller
 {
     public function list()
     {
-
     }
 
     public function addTest($id)
@@ -57,16 +56,18 @@ class TestController extends Controller
         $rctest->rc_average = array_sum($rctest->getAttributes()) / (7 * 5);
         $rctest->smartphone_id = $id;
 
-        $calcRf = $rptest->rp_average * $rctest->rc_average * (1 -   $rftest->rf_average);
+        $calcRf = $rptest->rp_average * $rctest->rc_average * (1 - $rftest->rf_average);
 
         if ($rftest->save() && $rptest->save() && $rctest->save()) {
             $smartphone->is_tested = 1;
             $smartphone->final_test_result = $calcRf;
-            $smartphone->save();
-        }
 
-        if ($rftest->save() && $rptest->save() && $rctest->save()) {
-            return redirect('/admin');
+            if ($smartphone->save()) {
+                return redirect()->route('listphones')
+                    ->with('success', 'Celular cadastrado com sucesso');
+            }
+
+            return back()->with('error', 'Erro no cadastro do celular');
         }
     }
 }

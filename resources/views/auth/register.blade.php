@@ -8,7 +8,7 @@
 
 
     textarea {
-	    resize: none;
+        resize: none;
     }
 
     .form-label {
@@ -56,7 +56,9 @@
         transition: all 0.25s ease 0s;
     }
 
-    .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+    .btn-start-order:hover,
+    .btn-start-order:active,
+    .btn-start-order:focus {
         border-color: #222222;
         color: #222222;
     }
@@ -96,59 +98,59 @@
         color: #ffffff;
 
     }
-  </style>
+</style>
 
-    <main class="main" id="top">
-        <div class="container-form">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+<main class="main" id="top">
+    <div class="container-form">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                 <h2>Inscreva-se</h2>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
-                    <form id="contact-form" class="form" method="POST" action="{{ route('register') }}" role="form">
-                    @csrf
-                        <div class="form-group mt-5">
-                            <label class="form-label" for="name">Nome</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                            @error('name')
-                                    <strong>{{ $message }}</strong>
-                            @enderror
-                        </div>
-
-                        <div class="form-group mt-5">
-                            <label class="form-label" for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="" required>
-                            @error('email')
-                                    <strong>{{ $message }}</strong>
-                            @enderror
-                        </div>
-
-                        <div class="form-group mt-5">
-                            <label class="form-label" for="subject">Data de nascimento</label>
-                            <input type="date" class="form-control" id="subject" name="birthday" tabindex="3">
-                        </div>
-
-                        <div class="form-group mt-5">
-                            <label class="form-label" for="message">Senha</label>
-                            <input type="password" name="password" class="form-control" id="message" required>
-                            @error('password')
-                                    <strong>{{ $message }}</strong>
-                            @enderror
-                        </div>
-
-                        <div class="form-group mt-5">
-                            <label class="form-label" for="message">Confirme a senha</label>
-                            <input type="password" name="password_confirmation" class="form-control" id="message" required>
-                        </div>
-
-                        <div class="text-center mt-5">
-                            <button type="submit" class="btn btn-start-order">Enviar</button>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
-    </main>
+        <div class="d-flex justify-content-center">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+                <form id="contact-form" class="form" method="POST" action="{{ route('register') }}" role="form">
+                    @csrf
+                    <div class="form-group mt-5">
+                        <label class="form-label" for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        @error('name')
+                        <strong>{{ $message }}</strong>
+                        @enderror
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <label class="form-label" for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="" required>
+                        @error('email')
+                        <strong>{{ $message }}</strong>
+                        @enderror
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <label class="form-label" for="subject">Data de nascimento</label>
+                        <input type="date" class="form-control" id="subject" name="birthday">
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <label class="form-label" for="message">Senha</label>
+                        <input type="password" name="password" class="form-control" id="message" required>
+                        @error('password')
+                        <strong>{{ $message }}</strong>
+                        @enderror
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <label class="form-label" for="message">Confirme a senha</label>
+                        <input type="password" name="password_confirmation" class="form-control" id="message" required>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <button type="submit" class="btn btn-start-order">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
 @endsection

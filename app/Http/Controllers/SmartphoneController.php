@@ -33,8 +33,11 @@ class SmartphoneController extends Controller
         $smartphone->created_by = Auth::user()->id;
 
         if ($smartphone->save()) {
-            return redirect('/admin');
+            return redirect()->route('login')
+                ->with('success', 'Celular cadastrado com sucesso');
         }
+
+        return back()->with('error', 'Erro no cadastro do celular');
     }
 
     public function userSubsciption() {

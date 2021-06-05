@@ -39,7 +39,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('index') }}">Sobre-nos</a>
+                    <a class="nav-link" href="{{ route('aboutpage') }}">Sobre-nos</a>
                 </li>
                 @guest
                 <li class="nav-item">
@@ -61,6 +61,9 @@
             </ul>
         </div>
     </nav>
+
+    @include('flash-message')
+
     @yield('content')
 </body>
 

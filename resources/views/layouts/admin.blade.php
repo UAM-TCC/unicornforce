@@ -82,6 +82,12 @@
         </div>
 
         <div class="col-8 col-md-8 content text-center">
+            <div id="app">
+                @include('flash-message')
+
+
+                @yield('content')
+            </div>
             @yield('content')
         </div>
     </div>

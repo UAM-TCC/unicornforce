@@ -65,6 +65,13 @@
         </div>
     </nav>
 
+    <div id="app">
+        @include('flash-message')
+
+
+        @yield('content')
+    </div>
+
     <div class="main-section row m-0 mt-4">
         <div class="col-4 col-md-2 side-bar mt-5 p-0 m-0">
             <div class="w-100 p-1" id="side-section-1">
