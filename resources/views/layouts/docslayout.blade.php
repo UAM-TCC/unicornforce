@@ -67,9 +67,6 @@
 
     <div id="app">
         @include('flash-message')
-
-
-        @yield('content')
     </div>
 
     <div class="main-section row m-0 mt-4">
