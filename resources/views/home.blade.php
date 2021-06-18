@@ -71,7 +71,7 @@
                     <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">Preencha seu formulário agora mesmo! </h2>
                 </div>
                 <div class="flex-center mt-5">
-                    <button class="btn btn-primary rounded-3 mt-4"><a class="text-decoration-none text-white" href="{{ route('requestsmartphone') }}">INSCREVA-SE</a><span class="fas fa-arrow-right"></span></button>
+                    <button class="btn btn-primary rounded-3 mt-4"><a class="text-decoration-none text-white" href="{{ route('register') }}">INSCREVA-SE</a><span class="fas fa-arrow-right"></span></button>
                 </div>
             </div>
         </div>
