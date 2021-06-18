@@ -43,4 +43,9 @@ class SmartphoneController extends Controller
     public function userSubsciption() {
         return view('smartphones.usersubscribe');
     }
+
+    public function requestSmartphone()
+    {
+        return view('smartphones.requestSmartphone');
+    }
 }

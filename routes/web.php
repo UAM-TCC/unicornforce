@@ -50,3 +50,6 @@ Route::get('/courses/free', function () {
 Route::get('/about', function () {
     return view('defaultpages/about');
 })->name('aboutpage');
+
+Route::get('/requestSmartphone', 'SmartphoneController@requestSmartphone')->name('requestsmartphone');
+

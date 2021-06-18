@@ -9,7 +9,7 @@
 
 <br>
 <table class="table table-bordered text-white">
-    <h4 class="mt-4">Selo de qualidade</h4>
+    <h4 class="mt-4">Selo de qualidade : {{ $quality[1] }}</h4>
     <br>
     <thead>
         <tr class="text-center">
@@ -20,7 +20,7 @@
 
     <tbody>
         <tr class="text-center">
-            <td>{{ $quality }}</td>
+            <td>{{ $quality[0] }}</td>
             <td>{{ $smartphone->final_test_result }}</td>
         </tr>
     </tbody>

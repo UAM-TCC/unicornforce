@@ -29,6 +29,6 @@
 @if ($errors->any())
 <div class="alert alert-danger">
     <button type="button" class="close" data-dismiss="alert">×</button>
-    Please check the form below for errors
+    Ocorreu um erro na requisição, Por favor tente novamente.
 </div>
 @endif

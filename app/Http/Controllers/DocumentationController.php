@@ -35,6 +35,7 @@ class DocumentationController extends Controller
     public function calculateQualityTest($finalTestResult)
     {
         $resultQuality = 0;
+        $qualityValue = 0;
 
         $qualisties = array(
             0 => 'Qualidade 0',
@@ -45,12 +46,30 @@ class DocumentationController extends Controller
             320 => 'Qualidade 5 Relação pontuação base (1:1)',
         );
 
+        $qualityValues = array(
+            0 => 0,
+            20 => 1,
+            40 => 2,
+            80 => 3,
+            160 => 4,
+            320 => 5,
+        );
+
         foreach ($qualisties as $key => $quality) {
             if ($finalTestResult >= $key) {
                 $resultQuality = $quality;
             }
         }
 
-        return $resultQuality;
+        foreach ($qualityValues as $key => $quality) {
+            if ($finalTestResult >= $key) {
+                $qualityValue = $quality;
+            }
+        }
+
+        return array(
+            $resultQuality,
+            $qualityValue
+        );
     }
 }
