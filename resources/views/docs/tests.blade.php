@@ -36,12 +36,15 @@
                 <img class="card-img-top cellphones" src="{{ Storage::url($smartphone->picture) }}" alt="{{ $smartphone->model }}">
                 <div class="card-body text-center">
                     <h5 class="card-title">{{ $smartphone->model }}</h5>
-                    <p class="card-text">Selo de qualidade : 1</p>
                     <a href="{{ route('testsresults', $smartphone->id) }}" class="btn btn-success bg-btncollapse">Ver teste</a>
                 </div>
             </div>
         </div>
         @endforeach
 </section>
+
+<div class="d-flex justify-content-center">
+{{ $smartphones->links() }}
+</div>
 
 @endsection

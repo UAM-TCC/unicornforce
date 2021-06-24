@@ -357,8 +357,8 @@
 
                     formPart = 3;
                 } else {
-                    if (!formComp.hasClass('d-none') && formComp.html().length > 1) {
-                        formComp.addClass('d-none');
+                    if (!formPerformance.hasClass('d-none')) {
+                        formPerformance.addClass('d-none');
                     }
 
                     titleForm.html('Teste de danos')

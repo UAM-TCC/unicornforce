@@ -49,9 +49,11 @@
                     <a class="nav-link" href="{{ route('login') }}">Login</a>
                 </li>
                 @else
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('listphones') }}">Administração</a>
-                </li>
+                    @if (Auth::user()->category_id === 1)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('listphones') }}">Administração</a>
+                        </li>
+                    @endif
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sair</a>

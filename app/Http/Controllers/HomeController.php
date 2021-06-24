@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\UserSmartphone;
+use Auth;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $status = 0;
+        if (Auth::check()) {
+            $userSmartphone = new UserSmartphone();
+            $status = $userSmartphone->where('user_id', Auth::user()->id)->pluck('status')->first();
+        }
+
+        return view('home', ['status' => $status]);
     }
 }

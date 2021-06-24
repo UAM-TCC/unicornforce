@@ -16,7 +16,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="courses-paid.html" class="text-decoration-none text-white">
+            <a href="{{ route('paidcourses') }}" class="text-decoration-none text-white">
                 <div class="border rounded-1 border-700 h-100 features-items" style="background: linear-gradient(45deg,rgba(29, 236, 197, 0.5),rgba(91, 14, 214, 0.5) 100%);">
                     <div class="p-5">
                         <img src="{{ asset('img/pagos.png') }}" alt="Cursos pagos" style="width:64px;height:64px;" />

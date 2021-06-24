@@ -18,21 +18,68 @@
     </div>
 </section>
 @else
-<section class="mt-6">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-9 col-lg-8 col-xl-5 font-19">
-                <h1 class="display-3 lh-sm">Parabéns ! O primeiro passo foi dado</h1>
+    @if ($status === 1)
+        <section class="mt-6">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-8 col-xl-5 font-19">
+                        <h1 class="display-3 lh-sm">Sua solicitação foi feita !</h1>
+                    </div>
+                    <div class="col-md-9 col-xl-5">
+                        <p class="fs-2">Aguarde até que a equipe UC Avalie.</p>
+                        <p class="fs-2">Até lá você pode estudar com nossos materiais.</p>
+                        <p class="fs-2">Boa sorte e bons estudos !</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-9 col-xl-5">
-                <p class="fs-2">Agora solicite seu smartphone !</p>
-                <a class="text-decoration-none text-white" href="{{ route('register') }}">
-                    <button class="btn btn-primary mt-3">Preencher</button>
-                </a>
+        </section>
+    @elseif ($status === 2)
+        <section class="mt-6">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-8 col-xl-5 font-19">
+                        <h1 class="display-3 lh-sm">Sua solicitação foi aprovada !</h1>
+                    </div>
+                    <div class="col-md-9 col-xl-5">
+                        <p class="fs-2">Logo você terá seu smartphone em mãos !</p>
+                        <p class="fs-2">Até lá você pode estudar com nossos materiais.</p>
+                        <p class="fs-2">Boa sorte e bons estudos !</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+    @elseif ($status === 3)
+        <section class="mt-6">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-8 col-xl-5 font-19">
+                        <h1 class="display-3 lh-sm">Poxa que pena sua foi solicitação recusada.</h1>
+                    </div>
+                    <div class="col-md-9 col-xl-5">
+                        <p class="fs-2">Mas não desista, você poderá solicitar novamente.</p>
+                        <p class="fs-2">Até lá você pode estudar com nossos materiais.</p>
+                        <p class="fs-2">Boa sorte e bons estudos !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @else
+        <section class="mt-6">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-8 col-xl-5 font-19">
+                        <h1 class="display-3 lh-sm">Parabéns ! O primeiro passo foi dado</h1>
+                    </div>
+                    <div class="col-md-9 col-xl-5">
+                        <p class="fs-2">Agora solicite seu smartphone !</p>
+                        <a class="text-decoration-none text-white" href="{{ route('requestsmartphone') }}">
+                            <button class="btn btn-primary mt-3">Preencher</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endif
 @endguest
 
 <section class="container">
@@ -68,10 +115,10 @@
             <div class="p-5 d-flex flex-column justify-content-xl-between flex-xl-row">
                 <div class="py-3">
                     <h4 class="opacity-40 ls-2 lh-base fw-medium">GOSTOU?</h4>
-                    <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">Preencha seu formulário agora mesmo! </h2>
+                    <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">Aproveite nossos cursos agora mesmo! </h2>
                 </div>
                 <div class="flex-center mt-5">
-                    <button class="btn btn-primary rounded-3 mt-4"><a class="text-decoration-none text-white" href="{{ route('register') }}">INSCREVA-SE</a><span class="fas fa-arrow-right"></span></button>
+                    <button class="btn btn-primary rounded-3 mt-4"><a class="text-decoration-none text-white" href="{{ route('courselist') }}">Ver cursos</a><span class="fas fa-arrow-right"></span></button>
                 </div>
             </div>
         </div>

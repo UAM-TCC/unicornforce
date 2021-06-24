@@ -112,25 +112,16 @@
                         <div class="form-group mt-5">
                             <label class="form-label" for="email">Modelo</label>
                             <input type="text" class="form-control" id="model" name="model" placeholder="" required>
-                            <!-- @error('email')
-                                    <strong>{{ $message }}</strong>
-                            @enderror -->
                         </div>
 
                         <div class="form-group mt-5">
                             <label class="form-label" for="email">Fabricante</label>
                             <input type="text" class="form-control" id="producer" name="producer" placeholder="" required>
-                            <!-- @error('email')
-                                    <strong>{{ $message }}</strong>
-                            @enderror -->
                         </div>
 
                         <div class="form-group mt-5">
                             <label class="form-label" for="email">Cor</label>
                             <input type="text" class="form-control" id="color" name="color" placeholder="" required>
-                            <!-- @error('email')
-                                    <strong>{{ $message }}</strong>
-                            @enderror -->
                         </div>
 
                         <div class="form-group mt-5">

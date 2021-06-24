@@ -126,7 +126,12 @@
                         @enderror
                     </div>
 
-                    <div class="text-center mt-5">
+                    <br>
+                    <br>
+
+                    <p>Ainda não é registrado ? <a href="{{ route('register') }}">Clique aqui para se cadastrar !</a></p>
+
+                    <div class="text-center mt-3">
                         <button type="submit" class="btn btn-start-order">Enviar</button>
                     </div>
                 </form>

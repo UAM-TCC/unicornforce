@@ -16,7 +16,7 @@ class DocumentationController extends Controller
     {
         $smartphone = new Smartphone();
 
-        $testedSmartphones = $smartphone->with('RfTest', 'RpTest', 'RcTest')->where('is_tested', 1)->paginate(6);
+        $testedSmartphones = $smartphone->with('RfTest', 'RpTest', 'RcTest')->where('is_tested', 1)->paginate(9);
 
         return view('docs.tests', ['smartphones' => $testedSmartphones]);
     }

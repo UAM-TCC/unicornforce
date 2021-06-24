@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
 <style>
     .card-img-top {
         height: 8rem;
@@ -12,14 +11,14 @@
 
     .card {
         background-color: #222222 !important;
-        border: none;    }
+        border: none;
+    }
 </style>
 
 <div>
-    <h2 class="d-flex justify-content-center">Cursos grátis</h2>
+    <h2 class="d-flex justify-content-center">Cursos pagos</h2>
 </div>
 
-<section>
 <section>
     <div class="container">
         <div class="accordion" id="accordionExample">
@@ -48,45 +47,53 @@
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">HTML5, CSS3 e Javascript na prática (3 Projetos) - Aprenda os três pilares do desenvolvimento web front-end na prática!</p>
-                                        <a href="https://www.udemy.com/course/html5-css3-e-javascript-na-pratica-3-projetos/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">Curso de HTML 5 COMPLETO e com Projetos Práticos para WEB - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/web-html5-css3-javascript/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">TIM Tec</h5>
-                                        <p class="card-text">Curso de Desenvolvimento de front-end gratuito: trabalhar de forma integrada com as linguagens HTML, CSS e JavaScript.</p>
-                                        <a href="https://cursos.timtec.com.br/course/desenvolvimento-de-front-end/intro/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Curso de Javascript Completo do iniciante ao mestre (2021) - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/javascript-completo-2018-do-iniciante-ao-mestre/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">DevMedia</h5>
-                                        <p class="card-text">Curso de Front-End: Aplicação Web com HTML, CSS e JavaScript</p>
-                                        <a href="https://www.devmedia.com.br/curso/curso-front-end/1960" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col d-flex justify-content-around align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Cursou</h5>
-                                        <p class="card-text">Curso de HTML5 – Introdução ao Front End</p>
-                                        <a href="https://www.cursou.com.br/informatica/html5-introducao-front-end/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Front-End profissional completo HTML5, CSS3, SASS, JS E MAIS (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/front-end-profissional-completo-html5-css3-sass-js-e-mais/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-around align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">DevMedia</h5>
-                                        <p class="card-text">Curso Grátis de CSS</p>
-                                        <a href="https://www.devmedia.com.br/curso/curso-css-gratuito/2215" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Front-End Design Essencial - HTML, CSS e JS Completo do Zero - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/front-end-essencial/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-around align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Desenvolvimento Responsivo com HTML5, CSS3 e Javascript - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/desenvolvimento-responsivo-com-html5-css3-e-javascript/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-around align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">B7Web</h5>
+                                        <p class="card-text">Pacote Full Stack (HTML5 e CSS3, Javascript, PHP, NodeJS, etc) - (R$464,16)</p>
+                                        <a href="https://b7web.com.br/fullstack/?gclid=Cj0KCQjws-OEBhCkARIsAPhOkIa0LxcnkX3I4Ng3RPFo-WZymaNweH0ofgvo4PFXLIFykICAASKpZDAaAlqGEALw_wcB&ref=X18524822M&hsrc=Z2Fkcw%3D%3D" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -115,9 +122,9 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Portal IDEA</h5>
-                                        <p class="card-text">Curso Online e Gratuito de PHP</p>
-                                        <a href="https://portalidea.com.br/curso-gratuito-php" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Hcode</h5>
+                                        <p class="card-text">Curso Completo de PHP 7 (R$22,90)</p>
+                                        <a href="https://hcode.com.br/cursos/PHP7" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -125,26 +132,26 @@
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">PHP 7 do Básico ao Intermediário</p>
-                                        <a href="https://www.udemy.com/course/php-do-basico-ao-intermediario/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">PHP 7 Completo - Curso do Desenvolvedor Web 2021 + Projetos (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/php-7-completo/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Curso em Vídeo</h5>
-                                        <p class="card-text">Curso de PHP para iniciantes - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=F7KzJ7e6EAc&list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Aprenda PHP do Zero Com Facilidade e Faça Sites Dinâmicos (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/aprenda-e-domine-a-linguagem-php-do-zero-com-facilidade/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Node Studio</h5>
-                                        <p class="card-text">Curso de PHP - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=XwpsxPmQN2E&list=PLwXQLZ3FdTVEITn849NlfI9BGY-hk1wkq" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Curso Completo de PHP 7 PROFISSIONAL - 6 cursos em 1 (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-completo-de-php-profissional/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -173,54 +180,46 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">RL System</h5>
-                                        <p class="card-text">Curso de Java Grátis</p>
-                                        <a href="https://www.rlsystem.com.br/curso-java-gratis/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Java Completo Programação Orientada a Objetos + Projetos - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/java-curso-completo/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">GINEAD</h5>
-                                        <p class="card-text">Curso Online Grátis de Linguagem Java</p>
-                                        <a href="https://www.ginead.com.br/curso/curso-gratuito-de-linguagem-java" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Java 2021 COMPLETO: Do Zero ao Profissional + Projetos! - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/fundamentos-de-programacao-com-java/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Curso em Vídeo</h5>
-                                        <p class="card-text">Java para Iniciantes - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Java e Orientação a Objetos (R$39,90)</p>
+                                        <a href="https://www.udemy.com/course/java-e-orientacao-a-objetos-e/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Danki Code</h5>
+                                        <p class="card-text">Curso Java Web - (R$228,00)</p>
+                                        <a href="https://cursos.dankicode.com/curso-java-web?gclid=Cj0KCQjws-OEBhCkARIsAPhOkIbCxs2Emz7_c5qIbnO4pOaEAbuEVKIEv_wKuzGBvPkaS_OHRFzGygQaAq67EALw_wcB&ref=O53467519W" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">DevDojo</h5>
-                                        <p class="card-text">Maratona Java - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=kkOSweUhGZM&list=PL62G310vn6nHrMr1tFLNOYP_c73m6nAzL" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">De aluno para aluno</h5>
-                                        <p class="card-text">Curso Gratuito de Java - Playlist YouTube </p>
-                                        <a href="https://www.youtube.com/watch?v=3qnOKAlJgtI&list=PLa75BYTPDNKZLzk3xG-gSXSU_AAq5RP4g" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">UAITEC</h5>
-                                        <p class="card-text">Curso Desenvolvedor Java</p>
-                                        <a href="https://www.uaitec.mg.gov.br/inicio/cursos/curso/3112/desenvolvedor-java" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Coffee and IT</h5>
+                                        <p class="card-text">Java efetivo, funcional e performático: Do zero a Produção (R$299,00)</p>
+                                        <a href="https://lb.coffeeandit.com.br/java?gclid=Cj0KCQjws-OEBhCkARIsAPhOkIaclnGJdmAN9hRCoeQI92JVm7rUBK2veyinKLdMMxzw_Po8b_MwA9waAtkLEALw_wcB" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -249,46 +248,36 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Curso em Vídeo</h5>
-                                        <p class="card-text">Curso de Python - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Python 3 - Curso Completo do Básico ao Avançado (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-python-3-completo/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Hashtag Programação</h5>
-                                        <p class="card-text">Como Sair do ZERO no Python em apenas uma aula - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=GQpQha2Mfpg" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Programação em Python do básico ao avançado (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-de-programacao-em-python-do-basico-ao-avancado/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">CFBCursos</h5>
-                                        <p class="card-text">Curso de Python - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=Ay-MakuSg08&list=PLx4x_zx8csUhuVgWfy7keQQAy7t1J35TR" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Jefferson Lobato</h5>
-                                        <p class="card-text">Curso completo de Python - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=wynFBNb2PcU&list=PLLVddSbilcul-1bAKtMKoL6wOCmDIPzFJ" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Python para Android, iOS, Win, Linux e Mac - Desde o Básico (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-de-python-android-ios-windows-linux-mac/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Prime Cursos</h5>
-                                        <p class="card-text">Curso de Programação em Python Online Grátis</p>
-                                        <a href="https://www.primecursos.com.br/programacao-em-python/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">ByLearn</h5>
+                                        <p class="card-text">Pacote Python: Faixa Preta - (R$447,00)</p>
+                                        <a href="https://python.bylearn.com.br/?gclid=Cj0KCQjws-OEBhCkARIsAPhOkIZjbMLD6frxh5casnRjC-anvAV0ZSm-VODDYsl5F0s1Og-o_fQ6f3EaAtRkEALw_wcB&ref=Q53410614T&hsrc=Y3Vyc29weXRob25jb21wbGV0bw%3D%3D" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -317,9 +306,9 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">DevMedia</h5>
-                                        <p class="card-text">Introdução a programação com C#</p>
-                                        <a href="https://www.devmedia.com.br/curso/introducao-a-programacao-com-csharp/368" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">C# Completo Programação Orientada a Objetos + Projetos - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -327,8 +316,8 @@
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">Introdução ao C# - Uma Abordagem Prática</p>
-                                        <a href="https://www.udemy.com/course/introducao-ao-c-uma-abordagem-pratica-modulo-i/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">C# Curso Completo: Do Básico ao Avançado! - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-c-sharp/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -336,8 +325,8 @@
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">Manipulando Listas Genéricas em C# [+eBook]</p>
-                                        <a href="https://www.udemy.com/course/listas-genericas-em-csharp/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">C# Basics for Beginners: Learn C# Fundamentals by Coding (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/csharp-tutorial-for-beginners/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -345,18 +334,18 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">CFBCursos</h5>
-                                        <p class="card-text">Curso de Programação C# - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=dVzJ3bx68FA&list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi&index=1" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">C# Intermediate: Classes, Interfaces and OOP (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Danilo Aparecido</h5>
-                                        <p class="card-text">Linguagem C# - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=sngC8L_SK2w&list=PLEdPHGYbHhlcxWx-_LrVVYZ2RRdqltums" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">C# Advanced Topics: Prepare for Technical Interviews (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/csharp-advanced/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -385,36 +374,36 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Digital Innovation One</h5>
-                                        <p class="card-text">Desenvolvimento back-end com Node.js</p>
-                                        <a href="https://digitalinnovation.one/cursos/desenvolvimento-back-end-com-nodejs/?ref=lp&hidden_text&source=/skills/nodejs&" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Node JS Curso Completo do Básico ao Avançado (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/nodejs-curso-completo/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Victor Lima</h5>
-                                        <p class="card-text">Curso de Node.JS - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=LLqq6FemMNQ&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Curso Completo do Desenvolvedor NodeJS e MongoDB (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-nodejs/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Celke</h5>
-                                        <p class="card-text">Mini Curso de Node.JS - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=jqrKQEJ6DpY&list=PLmY5AEiqDWwBHJ3i_8MDSszXXRTcFdkSu" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Guia do Programador</h5>
+                                        <p class="card-text">Formação Node.JS (R$47,90)</p>
+                                        <a href="https://guiadoprogramador.com/curso/formacao-node-js/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">balta.io</h5>
-                                        <p class="card-text">Criando API’s com Node.JS grátis - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">LuizTools</h5>
+                                        <p class="card-text">Curso Node.js e MongoDB (R$197,00)</p>
+                                        <a href="https://www.luiztools.com.br/curso-nodejs#inscricao" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -443,37 +432,9 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Curso em Vídeo</h5>
-                                        <p class="card-text">Curso de Linux | Primeiros Passos - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=6nN2EglOqCM&list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Matheus Battisti</h5>
-                                        <p class="card-text">Curso de Linux - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=aW4Owxgcvq4&list=PLnDvRpP8BnezDTtL8lm6C-UOJZn-xzALH" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Joseph Delgadillo</h5>
-                                        <p class="card-text">O Curso Completo de Linux: Iniciante para o Power User! - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=wBp0Rb-ZJak" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">Introdução ao Sistema Operacional Linux (Diego Mariano, Ph.D.)</p>
-                                        <a href="https://www.udemy.com/course/linux-ubuntu/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">Aprenda tudo sobre o Linux! Completo e atualizado 2021! - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-completo-linux/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -481,8 +442,26 @@
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">Terminal Linux (Diego Mariano, Ph.D.)</p>
-                                        <a href="https://www.udemy.com/course/terminal-de-comandos-linux/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">Linux Completo para Usuário Comum ou Desenvolvedor - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-de-linux-completo-para-usuario-comum-ou-desenvolvedor/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Aprendendo terminal Linux pondo a mão na massa! - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/aprendalinux/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Terminal Linux, Shell Scripting e Gerenciamento de Redes - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/terminal-linux-do-zero-ao-gerenciamento-de-redes/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -511,27 +490,9 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Wagner Cardoso</h5>
-                                        <p class="card-text">MySQL | Curso Completo para Iniciantes e Estudantes - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=_GqHC7zLV-c&list=PLOPt_yd2VLWGEnSzO-Sc9MYjs7GZadX1f" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Curso em Vídeo</h5>
-                                        <p class="card-text">Curso de Banco de Dados MySQL - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card bg-collapse text-center" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Daves Tecnologia</h5>
-                                        <p class="card-text">Curso de MySQL - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=eg3aj779278&list=PL5EmR7zuTn_ZGtE7A5PJjzQ0u7gicicLK" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Introdução a Banco de Dados com MySQL (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/aprenda_mysql_em30minutos/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -539,8 +500,36 @@
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
                                         <h5 class="card-title">Udemy</h5>
-                                        <p class="card-text">Curso de MySQL (Fábio Venâncio)</p>
-                                        <a href="https://www.udemy.com/course/curso-de-mysql/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <p class="card-text">O curso completo de Banco de Dados e SQL, sem mistérios! (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Dominando Banco de Dados com MySQL (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/curso-mysql/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">DevMedia</h5>
+                                        <p class="card-text">Curso Completo de MySQL</p>
+                                        <a href="https://www.devmedia.com.br/curso/curso-completo-de-mysql/281" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div class="card bg-collapse text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Escola Linux</h5>
+                                        <p class="card-text">Banco de Dados MySQL: 20 HORAS (R$357,50)</p>
+                                        <a href="https://cursos.escolalinux.com.br/banco-de-dados-mysql-20-horas" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
@@ -569,36 +558,36 @@
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Prime Cursos</h5>
-                                        <p class="card-text">Curso de Arduino Básico Online Grátis</p>
-                                        <a href="https://www.primecursos.com.br/arduino-basico/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Automação Profissional com Arduino (Curso Completo) - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/automacao-profissional-com-arduino-completo/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">CFBCursos</h5>
-                                        <p class="card-text">Curso de Arduino | Teoria e prática - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=Vuof27YELEI&list=PLx4x_zx8csUgWBTvA-fluHV970SzDJRBw" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Arduino: Referência de Programação (Completo) - (R$27,90)</p>
+                                        <a href="https://www.udemy.com/course/arduino-referencia-de-programacao/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Brincando com Ideias</h5>
-                                        <p class="card-text">Curso de Arduino - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=rCILKZPG0Kg&list=PL7CjOZ3q8fMc3OmT7gD7N6sLLFfXsXGZi" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Udemy</h5>
+                                        <p class="card-text">Aprenda Arduino com uso de simulador - (R$34,90)</p>
+                                        <a href="https://www.udemy.com/course/aprenda-arduino-com-uso-de-simulador/" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center align-items-center">
                                 <div class="card bg-collapse text-center" style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">WR Kits</h5>
-                                        <p class="card-text">Curso de Arduino e AVR - Playlist YouTube</p>
-                                        <a href="https://www.youtube.com/watch?v=S34PnG143sE&list=PLZ8dBTV2_5HSyOXhJ77d-iyt5Z_v_1DPM" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
+                                        <h5 class="card-title">Arduino e Automação</h5>
+                                        <p class="card-text">Curso Arduino para Iniciantes - (R$197,04)</p>
+                                        <a href="https://www.arduinoeautomacao.com.br/o-curso/curso-arduino-para-iniciantes?ref=M53392086W&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIagL_z_A33GWLJN6x1hjysO4MXOsoe0iQic7_aa6M2ZyVie1oVlIekaAggbEALw_wcB" target="_blank" class="btn btn-success bg-btncollapse">Visite o site</a>
                                     </div>
                                 </div>
                             </div>

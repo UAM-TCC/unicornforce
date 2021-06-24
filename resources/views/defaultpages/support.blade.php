@@ -187,6 +187,6 @@
             </div>
         </div>
     </div>
-
+    <input type="hidden" value="{{ isset(Auth::user()->id) ?? null }}">
 </main>
 @endsection('content')

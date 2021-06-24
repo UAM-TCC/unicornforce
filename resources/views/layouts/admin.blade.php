@@ -13,8 +13,8 @@
     <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
@@ -49,17 +49,19 @@
                     <a class="nav-link" href="{{ route('login') }}">Login</a>
                 </li>
                 @else
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('listphones') }}">Administração</a>
-                </li>
+                    @if (Auth::user()->category_id == 1)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('listphones') }}">Administração</a>
+                        </li>
+                    @endif
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sair</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sair</a>
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                </li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
                 @endguest
             </ul>
         </div>
@@ -79,14 +81,30 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="w-100 p-1" id="side-section-2">
+                <div style="font-size: 19px; padding-top: 19px;" id="items-side-2" class="mr-5 side-links">Solicitações</div>
+                <ul class="mt-1 d-none">
+                    <li class="mt-2">
+                        <a style="font-size: 18px;" class="text-white" href="{{ route('viewsolicitations') }}">Smartphones</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-100 p-1" id="side-section-3">
+                <div style="font-size: 19px; padding-top: 19px;" id="items-side-3" class="mr-5 side-links">Usuários</div>
+                <ul class="mt-1 d-none">
+                    <li class="mt-2">
+                        <a style="font-size: 18px;" class="text-white" href="{{ route('getusers') }}">Listar</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="col-8 col-md-8 content text-center">
             <div id="app">
                 @include('flash-message')
 
-
-                @yield('content')
             </div>
             @yield('content')
         </div>
